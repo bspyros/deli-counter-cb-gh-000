@@ -7,6 +7,8 @@ def line(queue)
       str << "#{index + 1}. #{name}"
       str << " " if index < queue.length - 1
     end
+
+    puts str
   end
 end
 
