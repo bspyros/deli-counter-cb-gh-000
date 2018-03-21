@@ -5,7 +5,7 @@ def line(queue)
     str =  "The line is currently: "
     queue.each_with_index do |name, index|
       str << "#{index + 1}. #{name}"
-      str << " " 
+      str << " " if index < queue.length - 1
     end
   end
 end
